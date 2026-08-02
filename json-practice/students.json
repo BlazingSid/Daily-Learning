@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "Shahid Attar",
+        "age": 19,
+        "course": "AI & DS",
+        "marks": {
+            "python": 91,
+            "sql": 84,
+            "numpy": 88
+        },
+        "skills": ["Python", "Git", "NumPy"]
+    },
+    {
+        "id": 2,
+        "name": "K Anusha",
+        "age": 18,
+        "course": "AI & DS",
+        "marks": {
+            "python": 85,
+            "sql": 90,
+            "numpy": 92
+        },
+        "skills": ["Python", "SQL", "Pandas"]
+    },
+    {
+        "id": 3,
+        "name": "Sidsventure",
+        "age": 19,
+        "course": "Computer Science",
+        "marks": {
+            "python": 75,
+            "sql": 72,
+            "numpy": 70
+        },
+        "skills": ["Java", "Git"]
+    }
+
+]
