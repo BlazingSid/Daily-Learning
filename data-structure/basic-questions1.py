@@ -1,3 +1,4 @@
+#creating empty stack 
 empty_stack = []
 
 #adding subjects
@@ -9,8 +10,6 @@ empty_stack.append("english")
 print(empty_stack)
 
 #removing subjects
-empty_stack.pop()
-empty_stack.pop()
 empty_stack.pop()
 
 #printing
