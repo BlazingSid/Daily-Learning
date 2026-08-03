@@ -1,10 +1,10 @@
 """The provided code stub will read in a dictionary containing key/value pairs of name:[marks] for a list of students. Print the average of the marks array for the student name provided, showing 2 places after the decimal."""
 
 if __name__ == '__main__':
-    n = int(input())
+    n = int(input("enter number of students: "))
     student_marks = {}
     for _ in range(n):
-        name, *line = input().split()
+        name, *line = input("enter student name and marks: ").split()
         scores = list(map(float, line))
         student_marks[name] = scores
 def get_average_marks(student_marks, name):
@@ -17,7 +17,8 @@ def get_average_marks(student_marks, name):
         return f"{name} has no marks recorded."
         
     average = sum(marks) / len(marks)
-    return f"{average:.2f}"
+    return f"{average:.2f} this is your avg marks57"
     
-query_name = input()
+query_name = input("enter student name to display avg: ")
 print(get_average_marks(student_marks, query_name))
+
