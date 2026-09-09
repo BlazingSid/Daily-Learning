@@ -1,17 +1,28 @@
+from requests import get
+
+
 marks = [
     [80, 75, 90],
     [65, 70, 75],
     [90, 80, 95]
 ]
 
-#sum of individual students 
-for i, rows in enumerate(marks):
-    print(f"Student No {i} has Total Marks of : {sum(rows)}")
+#printing individual marks
 
-#sum of all Students marks
-total_marks = 0
-for i in range(len(marks)):
-    for j in range(len(marks[0])):
-        total_marks += marks[i][j]
+def get_marks():
+    student_number = int(input("Enter Student Number: "))
+    if (student_number)==0: 
+        subject_number = int(input("Enter Subject Number: "))
+        if (subject_number)==0:
+            print(marks[0][0])
+        elif (subject_number)==1:
+            print(marks[0][1])
+        elif (subject_number)==2:
+            print(marks[0][2])
+        else:
+            print("NO STUDENT FOUND!")
+        
+            
+        
 
-print(f"The Total Marks of All Students Is : {total_marks}")
+get_marks()
